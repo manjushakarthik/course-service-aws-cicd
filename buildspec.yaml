@@ -3,7 +3,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - mvn clean install
+      - ./gradlew clean build
       - echo Logging in to Amazon ECR...
       - aws --version
       - REPOSITORY_URI=577251234720.dkr.ecr.us-east-2.amazonaws.com/manjusha-registry
