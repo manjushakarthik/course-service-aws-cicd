@@ -34,3 +34,8 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+jar {
+	archiveBaseName.set('course-service')
+	archiveVersion.set('1.0.0')
+}
